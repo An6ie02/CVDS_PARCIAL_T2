@@ -8,6 +8,14 @@ Angie Natalia Mojica
 ![ConexionDataBase](./imgs/conexion.png)
 
 ### Parte II. Agregar nueva propiedad a empleado
+Se agrego el calculo de la edad.
+```java
+    public int getAge(LocalDate birthdate) {
+        LocalDate datecurrent = LocalDate.now();
+        Period period = Period.between(birthdate, datecurrent);
+        return period.getYears();
+    }
+ ```
 ![AddBirthDay](./imgs/addAtribute.png)
 
 ### Parte III. Modificado el metodo **run**
